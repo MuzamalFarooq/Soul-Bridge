@@ -1,0 +1,13 @@
+{
+  "name": "true-love-workspace",
+  "version": "1.0.0",
+  "description": "True Love Matchmaking and Chat Application Workspace",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run dev --prefix backend\"",
+    "build:frontend": "npm run build --prefix frontend",
+    "start:backend": "npm run start --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

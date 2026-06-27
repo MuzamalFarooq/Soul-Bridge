@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%" preserveAspectRatio="none" role="img" aria-label="Default banner">
+  <defs>
+    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bannerBg)"/>
+  <rect width="1200" height="400" fill="url(#grid)"/>
+  <circle cx="200" cy="100" r="150" fill="#ffffff" opacity="0.05"/>
+  <circle cx="900" cy="300" r="200" fill="#ffffff" opacity="0.05"/>
+  <circle cx="600" cy="200" r="80" fill="#ffffff" opacity="0.03"/>
+</svg>
