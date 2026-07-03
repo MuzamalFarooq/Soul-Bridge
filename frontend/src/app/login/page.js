@@ -49,10 +49,10 @@ export default function Login() {
   return (
     <div className="flex min-h-screen bg-romantic-soft dark:bg-romantic-dark items-center justify-center p-4 relative overflow-hidden">
       {/* Background ambient lighting spheres */}
-      <div className="absolute top-[-10%] right-[-10%] w-[400px] h-[400px] rounded-full bg-pink-500/10 dark:bg-pink-500/5 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] rounded-full bg-indigo-500/10 dark:bg-indigo-500/5 blur-3xl pointer-events-none" />
+      <div className="absolute top-[-10%] right-[-10%] w-100 h-100 rounded-full bg-pink-500/10 dark:bg-pink-500/5 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-[-10%] left-[-10%] w-100 h-100 rounded-full bg-indigo-500/10 dark:bg-indigo-500/5 blur-3xl pointer-events-none" />
 
-      <div className="w-full max-w-[440px] z-10">
+      <div className="w-full max-w-110 z-10">
         
         {/* Brand Header */}
         <div className="flex flex-col items-center mb-6 text-center">
