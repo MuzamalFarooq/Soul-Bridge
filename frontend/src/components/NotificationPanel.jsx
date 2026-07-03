@@ -65,7 +65,7 @@ const NotificationPanel = ({ onClose }) => {
   };
 
   return (
-    <div className="flex flex-col max-h-[450px]">
+    <div className="flex flex-col max-h-112.5">
       {/* Header panel */}
       <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 p-4">
         <h3 className="font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2">
