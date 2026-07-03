@@ -197,7 +197,7 @@ const Navbar = () => {
                 onClick={handleLinkClick}
                 className={`flex items-center gap-3 px-4 py-3 rounded-xl text-base font-semibold transition-all ${
                   isActive
-                    ? 'bg-gradient-to-r from-pink-500 to-indigo-600 text-white'
+                    ? 'bg-linear-to-r from-pink-500 to-indigo-600 text-white'
                     : 'text-slate-600 dark:text-slate-300 hover:bg-pink-500/10 hover:text-pink-600'
                 }`}
               >
