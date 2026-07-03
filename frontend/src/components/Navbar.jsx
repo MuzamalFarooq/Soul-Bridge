@@ -124,7 +124,7 @@ const Navbar = () => {
                   alt={user.fullName}
                   className="h-7 w-7 sm:h-8 sm:w-8 rounded-full object-cover border border-pink-400"
                 />
-                <span className="hidden sm:inline text-sm font-semibold max-w-[100px] truncate">
+                <span className="hidden sm:inline text-sm font-semibold max-w-25 truncate">
                   {user.fullName.split(' ')[0]}
                 </span>
               </button>
