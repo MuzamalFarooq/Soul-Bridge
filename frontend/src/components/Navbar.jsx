@@ -55,7 +55,7 @@ const Navbar = () => {
                   href={link.href}
                   className={`flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
                     isActive
-                      ? 'bg-gradient-to-r from-pink-500 to-indigo-600 text-white shadow-md'
+                      ? 'bg-linear-to-r from-pink-500 to-indigo-600 text-white shadow-md'
                       : 'text-slate-600 dark:text-slate-300 hover:bg-pink-500/10 hover:text-pink-600'
                   }`}
                 >
