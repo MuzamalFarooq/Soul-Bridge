@@ -88,7 +88,7 @@ const NotificationPanel = ({ onClose }) => {
           <div className="flex flex-col items-center justify-center py-12 text-slate-400 text-center px-4">
             <Heart className="h-10 w-10 text-slate-300 dark:text-slate-700 mb-3" />
             <p className="text-sm font-medium">No alerts yet</p>
-            <p className="text-xs text-slate-400 max-w-[200px] mt-1">
+            <p className="text-xs text-slate-400 max-w-50 mt-1">
               Mutual matches and requests will appear here.
             </p>
           </div>
