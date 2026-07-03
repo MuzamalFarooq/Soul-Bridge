@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Heart, User, Shield, Info, Phone, Mail, Lock, Upload, MapPin, Loader2, ArrowLeft } from 'lucide-react';
+import { Heart, User, Shield, Info, Phone, Mail, Lock, Upload, MapPin, Loader2, ArrowLeft, Eye, EyeOff } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import GlassCard from '../../components/GlassCard';
 import BrandLogo from '../../components/BrandLogo';
@@ -32,6 +32,8 @@ export default function Signup() {
 
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [interestedIn, setInterestedIn] = useState('All');
   const [minAge, setMinAge] = useState(18);
   const [maxAge, setMaxAge] = useState(100);
@@ -414,13 +416,20 @@ export default function Signup() {
                       <Lock className="h-4 w-4" />
                     </div>
                     <input
-                      type="password"
+                      type={showPassword ? 'text' : 'password'}
                       required
                       placeholder="••••••••"
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
-                      className="glass-input block w-full pl-10 pr-4 py-2.5 rounded-xl text-sm focus:ring-2 focus:ring-pink-500"
+                      className="glass-input block w-full pl-10 pr-10 py-2.5 rounded-xl text-sm focus:ring-2 focus:ring-pink-500"
                     />
+                    <button
+                      type="button"
+                      onClick={() => setShowPassword(!showPassword)}
+                      className="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-pink-500 cursor-pointer"
+                    >
+                      {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                    </button>
                   </div>
                 </div>
                 <div>
@@ -430,13 +439,20 @@ export default function Signup() {
                       <Lock className="h-4 w-4" />
                     </div>
                     <input
-                      type="password"
+                      type={showConfirmPassword ? 'text' : 'password'}
                       required
                       placeholder="••••••••"
                       value={confirmPassword}
                       onChange={(e) => setConfirmPassword(e.target.value)}
-                      className="glass-input block w-full pl-10 pr-4 py-2.5 rounded-xl text-sm focus:ring-2 focus:ring-pink-500"
+                      className="glass-input block w-full pl-10 pr-10 py-2.5 rounded-xl text-sm focus:ring-2 focus:ring-pink-500"
                     />
+                    <button
+                      type="button"
+                      onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                      className="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-pink-500 cursor-pointer"
+                    >
+                      {showConfirmPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                    </button>
                   </div>
                 </div>
               </div>
