@@ -278,7 +278,7 @@ export default function Dashboard() {
                           <button
                             disabled={requestProgressId === prospect._id}
                             onClick={() => handleSendRequest(prospect._id)}
-                            className="w-full bg-gradient-to-r from-pink-500 to-indigo-600 hover:from-pink-600 hover:to-indigo-700 text-white font-bold text-xs py-2.5 rounded-xl shadow transition disabled:opacity-50 flex items-center justify-center gap-1.5 cursor-pointer"
+                            className="w-full bg-linear-to-r from-pink-500 to-indigo-600 hover:from-pink-600 hover:to-indigo-700 text-white font-bold text-xs py-2.5 rounded-xl shadow transition disabled:opacity-50 flex items-center justify-center gap-1.5 cursor-pointer"
                           >
                             {requestProgressId === prospect._id ? (
                               <Loader2 className="h-3.5 w-3.5 animate-spin" />
