@@ -374,7 +374,7 @@ export default function Dashboard() {
                         alt={reqUser.fullName}
                         className="h-10 w-10 rounded-full object-cover border"
                       />
-                      <div className="flex-grow min-w-0">
+                      <div className="grow min-w-0">
                         <h4 className="text-xs font-bold text-slate-800 dark:text-slate-150 truncate">
                           {reqUser.fullName}
                         </h4>
@@ -383,7 +383,7 @@ export default function Dashboard() {
                           {reqUser.city}
                         </span>
                       </div>
-                      <div className="flex flex-col gap-1.5 flex-shrink-0">
+                      <div className="flex flex-col gap-1.5 shrink-0">
                         <button
                           disabled={requestProgressId !== null}
                           onClick={() => handleAcceptRequest(reqUser._id)}
