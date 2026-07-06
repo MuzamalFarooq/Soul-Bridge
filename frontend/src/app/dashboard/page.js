@@ -363,7 +363,7 @@ export default function Dashboard() {
                 </div>
               ) : (
                 /* Pending match requests lists */
-                <div className="space-y-4 max-h-[300px] overflow-y-auto pr-1">
+                <div className="space-y-4 max-h-75 overflow-y-auto pr-1">
                   {incomingRequests.map((reqUser) => (
                     <div
                       key={reqUser._id}
