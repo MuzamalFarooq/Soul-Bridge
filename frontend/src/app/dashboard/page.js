@@ -408,7 +408,7 @@ export default function Dashboard() {
             {/* Quick Security Badge Card */}
             <GlassCard className="border border-green-500/10 bg-green-500/5">
               <div className="flex gap-3">
-                <ShieldCheck className="h-6 w-6 text-green-500 flex-shrink-0 mt-0.5" />
+                <ShieldCheck className="h-6 w-6 text-green-500 shrink-0 mt-0.5" />
                 <div className="space-y-1">
                   <h4 className="text-xs font-extrabold text-green-600 uppercase tracking-wider">
                     Secure Matching Active
