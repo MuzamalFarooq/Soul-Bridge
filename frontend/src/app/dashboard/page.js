@@ -214,7 +214,7 @@ export default function Dashboard() {
                 <GlassCard className="text-center py-16">
                   <Flame className="h-10 w-10 text-slate-300 dark:text-slate-700 mx-auto mb-3" />
                   <p className="font-bold text-slate-700 dark:text-slate-350">No suggestions available</p>
-                  <p className="text-xs text-slate-400 max-w-[280px] mx-auto mt-1">
+                  <p className="text-xs text-slate-400 max-w-70 mx-auto mt-1">
                     Try opening your profile settings to widen your age range or expand gender interests!
                   </p>
                   <button
