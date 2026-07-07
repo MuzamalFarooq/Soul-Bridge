@@ -260,7 +260,7 @@ export default function Dashboard() {
                         </div>
 
                         {/* Bio preview */}
-                        <p className="text-xs text-slate-600 dark:text-slate-350 leading-relaxed flex-grow line-clamp-3">
+                        <p className="text-xs text-slate-600 dark:text-slate-350 leading-relaxed grow line-clamp-3">
                           {prospect.bio || "This user hasn't written a biography yet, but they value deep connections."}
                         </p>
 
